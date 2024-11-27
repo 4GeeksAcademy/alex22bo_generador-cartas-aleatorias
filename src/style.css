@@ -1,1 +1,70 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: lightgray;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.card > p {
+  font-size: 100px;
+  margin-top: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.suit-hearts:before,
+.suit-diamonds:before {
+  content: "♥";
+  color: red;
+  top: 8px;
+  left: 20px;
+  font-size: 90px;
+  position: absolute;
+}
+
+.suit-hearts:after,
+.suit-diamonds:after {
+  content: "♥";
+  color: red;
+  bottom: 8px;
+  right: 20px;
+  transform: rotate(180deg);
+  font-size: 90px;
+  position: absolute;
+}
+
+.suit-spades:before,
+.suit-clubs:before {
+  content: "♠";
+  color: black;
+  top: 8px;
+  left: 20px;
+  font-size: 90px;
+  position: absolute;
+}
+
+.suit-spades:after,
+.suit-clubs:after {
+  content: "♠";
+  color: black;
+  bottom: 8px;
+  right: 20px;
+  transform: rotate(180deg);
+  font-size: 90px;
+  position: absolute;
+}
